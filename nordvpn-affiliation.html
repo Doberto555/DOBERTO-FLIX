@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partenariat d'affiliation NordVPN — DOBERTO-FLIX</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+
+    :root {
+      --red: #e50914;
+      --nord-blue: #4687d6;
+      --bg: #0a0a0a;
+      --surface: #111111;
+      --border: rgba(255,255,255,0.07);
+      --text: #f0f0f0;
+      --muted: #888;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 20% 20%, rgba(70,135,214,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 80% 80%, rgba(229,9,20,0.06) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      max-width: 640px;
+      width: 100%;
+      padding: 48px 40px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(70,135,214,0.12);
+      border: 1px solid rgba(70,135,214,0.3);
+      color: var(--nord-blue);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+    }
+
+    .logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+
+    .logo-flix {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      color: var(--red);
+      letter-spacing: 2px;
+    }
+
+    .logo-sep {
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .logo-nord {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 18px;
+      color: white;
+    }
+
+    .nord-icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(26px, 5vw, 38px);
+      letter-spacing: 2px;
+      line-height: 1.15;
+      color: white;
+      margin-bottom: 18px;
+    }
+
+    h1 span { color: var(--nord-blue); }
+
+    p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 18px;
+      text-align: left;
+      margin-bottom: 12px;
+    }
+
+    .info-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .info-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+
+    .info-value {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .info-value a {
+      color: var(--nord-blue);
+      text-decoration: none;
+    }
+
+    .info-value a:hover { text-decoration: underline; }
+
+    .footer-note {
+      margin-top: 32px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="badge">Vérification officielle</div>
+
+    <div class="logos">
+      <span class="logo-flix">DOBERTO-FLIX</span>
+      <span class="logo-sep">×</span>
+      <div class="logo-nord">
+        <!-- NordVPN shield SVG -->
+        <svg class="nord-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 4L6 12V24C6 33.94 13.94 43.08 24 46C34.06 43.08 42 33.94 42 24V12L24 4Z" fill="#4687d6"/>
+          <path d="M16 24C16 19.58 19.58 16 24 16C28.42 16 32 19.58 32 24C32 28.42 28.42 32 24 32C19.58 32 16 28.42 16 24Z" fill="white"/>
+          <path d="M22 20L26 24L22 28" stroke="#4687d6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        NordVPN
+      </div>
+    </div>
+
+    <h1>Partenariat d'affiliation <span>NordVPN</span></h1>
+
+    <p>
+      Cette page confirme que <strong>DOBERTO-FLIX</strong> participe au programme d'affiliation officiel de NordVPN.
+      Le propriétaire de ce site est bien inscrit en tant qu'affilié partenaire.
+    </p>
+
+    <hr class="divider">
+
+    <div class="info-row">
+      <span class="info-icon">🌐</span>
+      <div>
+        <div class="info-label">Site web</div>
+        <div class="info-value"><a href="https://doberto-flix.vercel.app" target="_blank">doberto-flix.vercel.app</a></div>
+      </div>
+    </div>
+
+    <div class="info-row">
+      <span class="info-icon">🛡️</span>
+      <div>
+        <div class="info-label">Programme</div>
+        <div class="info-value">NordVPN Affiliate Program</div>
+      </div>
+    </div>
+
+    <div class="info-row">
+      <span class="info-icon">✅</span>
+      <div>
+        <div class="info-label">Statut</div>
+        <div class="info-value">Affilié actif — Page de vérification de propriété</div>
+      </div>
+    </div>
+
+    <p class="footer-note">
+      Cette page a été créée à la demande de l'équipe NordVPN pour confirmer la propriété du domaine.<br>
+      DOBERTO-FLIX — Tous droits réservés.
+    </p>
+  </div>
+
+</body>
+</html>
